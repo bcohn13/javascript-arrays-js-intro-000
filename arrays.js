@@ -62,7 +62,7 @@ function removeElementFromEndOfArray(array,element) {
 
 }
 
-function destructivelyAddElementFromEndOfArray(array,element) {
+function destructivelyRemoveElementFromEndOfArray(array,element) {
 
   array.push(element)
   return array
