@@ -42,6 +42,7 @@ function removeElementFromBeginningOfArray(array,element) {
   var a=new Array()
   a.unshift(array[0])
   a.unshift(element)
+  a.slice(0)
   return a
 
 }
