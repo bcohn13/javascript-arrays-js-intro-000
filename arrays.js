@@ -42,7 +42,9 @@ function accessElementInArray(array,index) {
 function removeElementFromBeginningOfArray(array,element) {
 
   var a=new Array()
-  a.unshift(array[0])
+  for (i = 0; i < array.length-1; i++){
+    a.unshift(array[i])
+  }
   a.unshift(element)
   a.slice(0)
   return a
