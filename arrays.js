@@ -36,3 +36,35 @@ function accessElementInArray(array,index) {
 
   return array[index]
 }
+
+function removeElementFromBeginningOfArray(array,element) {
+
+  var a=new Array()
+  a.unshift(array[0])
+  a.unshift(element)
+  return a
+
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array,element) {
+
+  array.unshift(element)
+  return array
+
+}
+
+function removeElementFromEndOfArray(array,element) {
+
+  var a=new Array()
+  a.push(array[0])
+  a.push(element)
+  return a
+
+}
+
+function destructivelyAddElementFromEndOfArray(array,element) {
+
+  array.push(element)
+  return array
+
+}
