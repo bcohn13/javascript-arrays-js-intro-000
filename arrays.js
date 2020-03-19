@@ -55,10 +55,8 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 
 function removeElementFromEndOfArray(array) {
 
-
   array=array.slice(-1)
   return array
-
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
