@@ -41,7 +41,7 @@ function accessElementInArray(array,index) {
 function removeElementFromBeginningOfArray(array,element) {
 
   var a=new Array()
-  for (i = 0; i < array.length-1; i++){
+  for (i = 0; i < array.length; i++){
     a.unshift(array[i])
   }
   a.unshift(element)
