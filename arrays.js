@@ -38,21 +38,17 @@ function accessElementInArray(array,index) {
   return array[index]
 }
 
-function removeElementFromBeginningOfArray(array,element) {
+function removeElementFromBeginningOfArray(array) {
 
-  var a=new Array()
-  for (i = 0; i < array.length; i++){
-    a.unshift(array[i])
-  }
-  a.unshift(element)
-  a.slice(0)
-  return a
+  array=array.slice(0)
+  
+  return array
 
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array,element) {
 
-  array.unshift(element)
+  array.shift(element)
   return array
 
 }
